@@ -34,4 +34,9 @@ public class MonsterService
 		this.monsterRepository.save(monster);
 	}
 	
+	public void delete(Monster monster)
+	{
+		this.monsterRepository.delete(monster);;
+	}
+	
 }
