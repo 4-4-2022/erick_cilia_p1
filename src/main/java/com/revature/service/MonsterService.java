@@ -36,7 +36,7 @@ public class MonsterService
 	
 	public void delete(Monster monster)
 	{
-		this.monsterRepository.delete(monster);;
+		this.monsterRepository.delete(monster);
 	}
 	
 }
