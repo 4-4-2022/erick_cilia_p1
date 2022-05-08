@@ -32,7 +32,7 @@ public class MonsterController
 	}
 	
 	//GET request
-	//http://localhost/monster/all
+	//http://localhost:8080/monster/all
 	@GetMapping(value = "/all", produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<List<Monster>> findAll()
 	{
@@ -41,7 +41,7 @@ public class MonsterController
 	}
 	
 	//POST request
-	//http://localhost/monster/new -> Insert into body in POstman App
+	//http://localhost:8080/monster/new -> Insert into body in POstman App
 	@PostMapping(value = "/new", consumes = MediaType.APPLICATION_JSON_VALUE)
 	public void save(@RequestBody Monster monster)
 	{
@@ -52,7 +52,7 @@ public class MonsterController
 	}
 	
 	//GET request
-	//http://localhost/monster/"monsterName" -> to find a monster in the database we've created
+	//http://localhost:8080/monster/"monsterName" -> to find a monster in the database we've created
 	@GetMapping(value = "/{name}", produces =MediaType.APPLICATION_JSON_VALUE)
 	public Monster findMonsterByName(@PathVariable("name") String name)
 	{
@@ -62,7 +62,7 @@ public class MonsterController
 	
 	
 	//DELETE request
-	//http://localhost/monster/"monsterName" -> to delete a monster in the database by name
+	//http://localhost:8080/monster/"monsterName" -> to delete a monster in the database by name
 	@DeleteMapping(value = "/{name}", produces =MediaType.APPLICATION_JSON_VALUE)
 	public void delete(@PathVariable("name") Monster monster)
 	{
