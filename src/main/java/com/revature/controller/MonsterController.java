@@ -19,7 +19,7 @@ import com.revature.entities.Monster;
 import com.revature.service.MonsterService;
 
 @RestController("monsterController")
-@RequestMapping("/monster")////http://localhost/monster
+@RequestMapping("/monster")////http://localhost:8080/monster
 public class MonsterController
 {
 	private MonsterService monsterService;
